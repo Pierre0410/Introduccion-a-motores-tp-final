@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://bkhum2ida73kq"]
+
+[ext_resource type="Texture2D" uid="uid://oumteewccyqp" path="res://sprites/MapaInicial.png" id="1_6bg0a"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Node2D"]
+format = 2
+
+[node name="MapaInicial" type="Sprite2D" parent="Node2D"]
+scale = Vector2(15, 15)
+texture = ExtResource("1_6bg0a")
