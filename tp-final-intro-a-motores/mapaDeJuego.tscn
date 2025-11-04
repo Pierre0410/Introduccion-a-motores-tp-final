@@ -1,16 +1,30 @@
-[gd_scene load_steps=2 format=3 uid="uid://bkhum2ida73kq"]
+[gd_scene load_steps=4 format=3 uid="uid://bkhum2ida73kq"]
 
 [ext_resource type="Texture2D" uid="uid://oumteewccyqp" path="res://sprites/MapaInicial.png" id="1_6bg0a"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6bg0a"]
+texture = ExtResource("1_6bg0a")
+texture_region_size = Vector2i(600, 550)
+1:1/size_in_atlas = Vector2i(5, 5)
+1:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kriv8"]
+tile_size = Vector2i(400, 400)
+sources/0 = SubResource("TileSetAtlasSource_6bg0a")
 
 [node name="Node2D" type="Node2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(61, -526)
+zoom = Vector2(0.5, 0.3)
 
 [node name="Node2D" type="Node2D" parent="."]
 
 [node name="TileMap" type="TileMap" parent="Node2D"]
+position = Vector2(-91, -808)
+tile_set = SubResource("TileSet_kriv8")
+rendering_quadrant_size = 20
 format = 2
+layer_0/tile_data = PackedInt32Array(0, 65536, 1)
 
-[node name="MapaInicial" type="Sprite2D" parent="Node2D"]
-scale = Vector2(15, 15)
-texture = ExtResource("1_6bg0a")
+[node name="Player" type="CharacterBody2D" parent="."]
