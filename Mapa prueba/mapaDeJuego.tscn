@@ -1,0 +1,30 @@
+[gd_scene load_steps=4 format=3 uid="uid://bkhum2ida73kq"]
+
+[ext_resource type="Texture2D" uid="uid://dygpaeemls0ao" path="res://sprites/Mapa/MapaInicial.png" id="1_6bg0a"]
+[ext_resource type="PackedScene" uid="uid://dqcac4xdkqops" path="res://Player.tscn" id="2_kriv8"]
+
+[sub_resource type="TileSet" id="TileSet_kriv8"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+
+[node name="CharacterBody2D" parent="Camera2D" instance=ExtResource("2_kriv8")]
+position = Vector2(252, -36)
+scale = Vector2(0.19999757, 0.19999757)
+
+[node name="Node2Ds" type="Node2D" parent="."]
+
+[node name="MapaInicial" type="Sprite2D" parent="Node2Ds"]
+position = Vector2(0, -1)
+scale = Vector2(0.74549997, 0.39149997)
+texture = ExtResource("1_6bg0a")
+
+[node name="TileMap" type="TileMap" parent="Node2Ds"]
+tile_set = SubResource("TileSet_kriv8")
+format = 2
+
+[node name="Layer1" type="TileMapLayer" parent="Node2Ds/TileMap"]
+use_parent_material = true
+tile_set = SubResource("TileSet_kriv8")
+use_kinematic_bodies = true
