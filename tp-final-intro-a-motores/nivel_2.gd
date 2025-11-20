@@ -7,14 +7,13 @@ func _ready() -> void:
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta: float) -> void:
-	pass
 
-func  _physics_process(delta) -> void:
+
+func  _physics_process(delta):
 	var posicion_del_mouse = get_global_mouse_position()
 	var velocidad = delta * 100
 	
-	if velocidad <= 30 :
+	if velocidad <= 60 :
 		get_node("Mapa/TileMapLayer").look_at(posicion_del_mouse)
 
 	
