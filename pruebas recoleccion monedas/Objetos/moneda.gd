@@ -9,11 +9,7 @@ func _on_moneda_enviar_señal() -> void:
 func _on_body_entered(body):
 	if body.name == "Player":
 		GameManager.add_Score()
+		print(str(GameManager.score))
 		queue_free()
 		#emit_signal("moneda_recogida")
 		print("Se envio la señal moneda recogida")
-
-func borarUnaMoneda():
-	if Input.is_action_just_pressed("sacar_Vida"):
-		emit_signal("sacarVida")
-		print("me saque una moneda")
