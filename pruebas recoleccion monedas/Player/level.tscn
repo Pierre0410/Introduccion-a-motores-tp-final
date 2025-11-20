@@ -1,0 +1,57 @@
+[gd_scene load_steps=7 format=3 uid="uid://c3ui45o0it4mh"]
+
+[ext_resource type="PackedScene" uid="uid://dgbs6bco4uqfg" path="res://EscenarioNivel1.tscn" id="1_b7xed"]
+[ext_resource type="PackedScene" uid="uid://cm5bgsrwdwyw2" path="res://Player/player.tscn" id="2_yclnc"]
+[ext_resource type="Script" uid="uid://doyw6jd364pbt" path="res://Script/game_manager.gd" id="3_fyvwl"]
+[ext_resource type="Texture2D" uid="uid://bvd0f4fx2sou6" path="res://Sprites/Moneda.png" id="3_wktx1"]
+[ext_resource type="Script" uid="uid://cyapm4okifulr" path="res://Player/label.gd" id="4_x34xk"]
+[ext_resource type="PackedScene" uid="uid://b7h6uayqw2eg1" path="res://Objetos/Moneda.tscn" id="5_sqwja"]
+
+[node name="Level" type="Node2D"]
+
+[node name="TilemapLayers" parent="." instance=ExtResource("1_b7xed")]
+position = Vector2(1205, 590)
+
+[node name="Player" parent="." groups=["jugador"] instance=ExtResource("2_yclnc")]
+position = Vector2(1072, 291)
+collision_layer = 129
+JUMP_VELOCITY = -650
+
+[node name="Control" type="Control" parent="Player"]
+layout_mode = 3
+anchors_preset = 0
+offset_left = -1072.0
+offset_top = -291.0
+offset_right = -1032.0
+offset_bottom = -251.0
+script = ExtResource("3_fyvwl")
+
+[node name="Label" type="Label" parent="Player/Control"]
+layout_mode = 0
+offset_left = 1604.6287
+offset_top = -27.0
+offset_right = 1644.6287
+offset_bottom = -4.0
+scale = Vector2(1.7465775, 1.7465775)
+text = "00"
+script = ExtResource("4_x34xk")
+
+[node name="Sprite2D" type="Sprite2D" parent="Player/Control"]
+position = Vector2(1587.6288, -7)
+scale = Vector2(1.4535971, 1.5146662)
+texture = ExtResource("3_wktx1")
+
+[node name="Camera2D" type="Camera2D" parent="Player"]
+position = Vector2(0, 7)
+
+[node name="Moneda" parent="." groups=["Monedas"] instance=ExtResource("5_sqwja")]
+position = Vector2(826, 298)
+
+[node name="Moneda2" parent="." groups=["Monedas"] instance=ExtResource("5_sqwja")]
+position = Vector2(877, 296)
+
+[node name="Moneda3" parent="." groups=["Monedas"] instance=ExtResource("5_sqwja")]
+position = Vector2(1392, 291)
+
+[node name="Moneda4" parent="." instance=ExtResource("5_sqwja")]
+position = Vector2(1044, 1254)
