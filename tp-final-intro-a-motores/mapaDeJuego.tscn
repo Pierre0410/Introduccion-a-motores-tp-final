@@ -32,7 +32,6 @@ sources/0 = SubResource("TileSetAtlasSource_6bg0a")
 visible = false
 position = Vector2(-18, -56)
 zoom = Vector2(0.07, 0.06)
-metadata/_edit_lock_ = true
 
 [node name="Node2D" type="Node2D" parent="."]
 
@@ -43,8 +42,9 @@ tile_set = SubResource("TileSet_kriv8")
 rendering_quadrant_size = 20
 format = 2
 
-[node name="Layer0" type="TileMapLayer" parent="Node2D/TileMap"]
+[node name="Layer1" type="TileMapLayer" parent="Node2D/TileMap"]
 use_parent_material = true
+position = Vector2(941.59784, 1940.8372)
 tile_map_data = PackedByteArray("AAABAAEAAAACAAQAAAACAAEAAAADAAQAAAADAAEAAAAEAAQAAAAEAAEAAAAFAAQAAAAEAAAAAAAFAAMAAAADAAAAAAAEAAMAAAACAAAAAAADAAMAAAABAAAAAAACAAMAAAABAP//AAACAAIAAAACAP//AAADAAIAAAADAP//AAAEAAIAAAAEAP//AAAFAAIAAAABAP7/AAACAAEAAAACAP7/AAADAAEAAAADAP7/AAAEAAEAAAAEAP7/AAAFAAEAAAA=")
 tile_set = SubResource("TileSet_kriv8")
 rendering_quadrant_size = 20

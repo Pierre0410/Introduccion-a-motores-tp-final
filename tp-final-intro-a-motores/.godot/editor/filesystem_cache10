@@ -1,25 +1,33 @@
 63f7b34db8d8cdea90c76aacccf841ec
-<<<<<<< HEAD
-::res://::1763576039
+::res://::1763771162
 icon.svg::CompressedTexture2D::2368161283486109102::1763323467::1763350751::1::::<><><>0<>0<>c425f043b5268dd2c6b897d22c214a95<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 mapaDeJuego.tscn::PackedScene::3103996964360517300::1763405905::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png
-nivel_2.gd::GDScript::102162224950079697::1763410053::0::1::::<>Node2D<><>0<>0<><>::
-nivel_2.tscn::PackedScene::2054865239945927942::1763410053::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png<>uid://bpqukbket7dt::::res://nivel_2.gd
+nivel_2.gd::GDScript::102162224950079697::1763594312::0::1::::<>Node2D<><>0<>0<><>::
+nivel_2.tscn::PackedScene::2054865239945927942::1763767120::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png<>uid://bpqukbket7dt::::res://nivel_2.gd<>uid://cbrlbbef14bhd::::res://sprites/all_blocks.png<>uid://dkxcoywon1q2x::::res://sprites/plan.png<>uid://df4txs35xa6lf::::res://sprites/dugeonRoomFloor/dugeonWallsFloorsTransparentBackground.png
 node_2d.gd::GDScript::3963298593635730273::1763323467::0::1::::<>Node2D<><>0<>0<><>::
 node_2d.tscn::PackedScene::1294780145096601120::1763323467::0::1::::<><><>0<>0<><>::uid://bwp37i2k6hw0p::::res://node_2d.gd
-::res://sprites/::1763577111
+::res://MenuPrincipal/::1763755787
+boton_menu_principal.tres::Theme::7082911425494404092::1763755787::0::1::::<><><>0<>0<><>::
+iniciar.gd::GDScript::5166152646149150908::1763755787::0::1::::<>Button<><>0<>0<><>::
+menu_principal.tscn::PackedScene::4419204525529117961::1763755787::0::1::::<><><>0<>0<><>::uid://c76ars5xhdglg::::res://MenuPrincipal/boton_menu_principal.tres<>uid://cfur1q4ruy2k3::::res://MenuPrincipal/iniciar.gd<>uid://cfest6jmxe7ly::::res://MenuPrincipal/salir.gd<>uid://bkhum2ida73kq::::res://mapaDeJuego.tscn
+salir.gd::GDScript::5133171575249842142::1763755787::0::1::::<>Button<><>0<>0<><>::
+::res://sprites/::1763767002
 0e7ec208-fb44-4c5c-a1bf-f5ec2342ebc6.png::CompressedTexture2D::3102601929712019961::1763323467::1763350752::1::::<><><>0<>0<>9d3609a31e5e5d24de73f0e1cce25373<>res://.godot/imported/0e7ec208-fb44-4c5c-a1bf-f5ec2342ebc6.png-152e70a1be3b2396c2d8f67c1b9b298d.ctex::
 04a50f37-d566-4e78-89f8-cea03c5f9802.png::CompressedTexture2D::7632693827417977361::1763323467::1763350752::1::::<><><>0<>0<>afa57908eebe675442fc05fc3d398904<>res://.godot/imported/04a50f37-d566-4e78-89f8-cea03c5f9802.png-86e8e6dd41ac08517e402cfd113b7f95.ctex::
-9e404d8d-ae25-4a64-8675-68623f461877.png::CompressedTexture2D::7054455194239462708::1763323467::1763350752::1::::<><><>0<>0<>c6b11665c7f19bbabe0dd5eab458e11e<>res://.godot/imported/9e404d8d-ae25-4a64-8675-68623f461877.png-968ecfc4d8f51efb2e129a7b22309f52.ctex::
 89686bc3-3a6a-4392-8d4b-8a5e3f41b8e2.png::CompressedTexture2D::5616364761713131233::1763323467::1763350752::1::::<><><>0<>0<>1fc4ce9c89dcbf220b2bbd5bd50a43fe<>res://.godot/imported/89686bc3-3a6a-4392-8d4b-8a5e3f41b8e2.png-1df210c49c08b487d7be5911ada0ce9f.ctex::
 all_blocks.png::CompressedTexture2D::4878794364523217565::1763409052::1763409287::1::::<><><>0<>0<>d9692426ef220100a7f7f0b10309b13b<>res://.godot/imported/all_blocks.png-29ba52a6266b2483e121a065a889f5f4.ctex::
+brick.png::CompressedTexture2D::2899844194931279539::1763409039::1763767002::1::::<><><>0<>0<>b0e8ff6a5f64c9486180dfe0d5700d69<>res://.godot/imported/brick.png-77d98f5d32d031ca09e379b39ddb4c05.ctex::
+button_in.png::CompressedTexture2D::1862352832354445366::1763409039::1763767002::1::::<><><>0<>0<>6f55dee748c07205cbe761787b9eb3c6<>res://.godot/imported/button_in.png-ffeb2396e2f7238129d5ba10cd76f9dc.ctex::
+button_out.png::CompressedTexture2D::6785133357446155762::1763409039::1763767002::1::::<><><>0<>0<>401908d0382f984c3dd75d04805a0e4b<>res://.godot/imported/button_out.png-d5091094797fefb0e2be37e6e534dae6.ctex::
 MapaInicial.png::CompressedTexture2D::1024694117286016639::1763323467::1763350752::1::::<><><>0<>0<>c842e525091d1b4ce20cc98fddbe1bbc<>res://.godot/imported/MapaInicial.png-87ff68189e76cada6f7b666623150dc3.ctex::
 palette.png::CompressedTexture2D::2930358752313069617::1763409052::1763409287::1::::<><><>0<>0<>ecaa9b8f73182be42e45580b486b4944<>res://.godot/imported/palette.png-131e204bb32134c1e455555acf08ed5e.ctex::
 plan.png::CompressedTexture2D::7908778906103813581::1763409052::1763409287::1::::<><><>0<>0<>1faec85698a43aeb7c3df9fdf252eb7c<>res://.godot/imported/plan.png-f108b6b7d862572e362c2e356f448aa0.ctex::
-::res://sprites/dugeonRoomFloor/::1763577112
+spike.png::CompressedTexture2D::6265309531214223750::1763409039::1763767002::1::::<><><>0<>0<>ce839da38925af2eb78634d05b907c6e<>res://.godot/imported/spike.png-55b71ac6866a2c943ab8c832a6cf27a0.ctex::
+spring.png::CompressedTexture2D::191653753690766055::1763409039::1763767002::1::::<><><>0<>0<>08007df90c1db98ae0eea1003098c1d5<>res://.godot/imported/spring.png-923c87ecebff8bf03fc9cdf45c0885bb.ctex::
+::res://sprites/dugeonRoomFloor/::1763577114
 dugeonWallsFloorsBlackBackground.png::CompressedTexture2D::7689593233765134565::1620657417::1763577114::1::::<><><>0<>0<>37541fc1253efb5bd44857b261a37e08<>res://.godot/imported/dugeonWallsFloorsBlackBackground.png-63eacc344e711e663174488b440a0102.ctex::
 dugeonWallsFloorsTransparentBackground.png::CompressedTexture2D::7571268910328234919::1620657587::1763577114::1::::<><><>0<>0<>db997623f9f1dc0f52c5c1f6d55afcf1<>res://.godot/imported/dugeonWallsFloorsTransparentBackground.png-d420daef0309d8ff0ae2d18baabfd205.ctex::
-::res://sprites/dugeonRoomFloor/individuals files/::1763577112
+::res://sprites/dugeonRoomFloor/individuals files/::1763577115
 dongeonWallFloorTransparent1.png::CompressedTexture2D::5665967485661137020::1620657880::1763577115::1::::<><><>0<>0<>2e6f0c251731cba5919e353bde34db47<>res://.godot/imported/dongeonWallFloorTransparent1.png-c6a8b8d4589fdf71df39bc99b57e9f01.ctex::
 dongeonWallFloorTransparent2.png::CompressedTexture2D::7697903788483368295::1620657880::1763577115::1::::<><><>0<>0<>89f907451c1e373406f6f61c9464c1e9<>res://.godot/imported/dongeonWallFloorTransparent2.png-7641cd895a3b3df0f3d5c6ccf127cc23.ctex::
 dongeonWallFloorTransparent3.png::CompressedTexture2D::7193746490775187577::1620657880::1763577115::1::::<><><>0<>0<>f70fef28ded7858446a7ff151b30037a<>res://.godot/imported/dongeonWallFloorTransparent3.png-8ad3dfab701deca0ada1127ca9109280.ctex::
@@ -36,21 +44,3 @@ dongeonWallFloorTransparent13.png::CompressedTexture2D::6774575888454280584::162
 dongeonWallFloorTransparent14.png::CompressedTexture2D::478401086887568825::1620657880::1763577114::1::::<><><>0<>0<>4f6fb6a7fd6edc31789024621e5cd757<>res://.godot/imported/dongeonWallFloorTransparent14.png-1b33de56e5685239531c4451ad89052e.ctex::
 dongeonWallFloorTransparent15.png::CompressedTexture2D::3583986056358248608::1620657880::1763577114::1::::<><><>0<>0<>c7588f93d5b910570182bbe63149f1b3<>res://.godot/imported/dongeonWallFloorTransparent15.png-b5c31c560bc2528a66b92cb651c69b1d.ctex::
 dongeonWallFloorTransparent16.png::CompressedTexture2D::3632302264156909816::1620657880::1763577114::1::::<><><>0<>0<>b3647ac4fb982cab3b7098d48e69df55<>res://.godot/imported/dongeonWallFloorTransparent16.png-3898b0e32a55ced2cfe8c362f2418a09.ctex::
-=======
-::res://::1763490845
-icon.svg::CompressedTexture2D::2368161283486109102::1763490764::1763490846::1::::<><><>0<>0<>c425f043b5268dd2c6b897d22c214a95<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-mapaDeJuego.tscn::PackedScene::3103996964360517300::1763490764::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png
-nivel_2.gd::GDScript::102162224950079697::1763490764::0::1::::<>Node2D<><>0<>0<><>::
-nivel_2.tscn::PackedScene::2054865239945927942::1763490764::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png<>uid://bpqukbket7dt::::res://nivel_2.gd
-node_2d.gd::GDScript::3963298593635730273::1763490764::0::1::::<>Node2D<><>0<>0<><>::
-node_2d.tscn::PackedScene::1294780145096601120::1763490764::0::1::::<><><>0<>0<><>::uid://bwp37i2k6hw0p::::res://node_2d.gd
-::res://sprites/::1763490764
-0e7ec208-fb44-4c5c-a1bf-f5ec2342ebc6.png::CompressedTexture2D::3102601929712019961::1763490764::1763490848::1::::<><><>0<>0<>9d3609a31e5e5d24de73f0e1cce25373<>res://.godot/imported/0e7ec208-fb44-4c5c-a1bf-f5ec2342ebc6.png-152e70a1be3b2396c2d8f67c1b9b298d.ctex::
-04a50f37-d566-4e78-89f8-cea03c5f9802.png::CompressedTexture2D::7632693827417977361::1763490764::1763490848::1::::<><><>0<>0<>afa57908eebe675442fc05fc3d398904<>res://.godot/imported/04a50f37-d566-4e78-89f8-cea03c5f9802.png-86e8e6dd41ac08517e402cfd113b7f95.ctex::
-9e404d8d-ae25-4a64-8675-68623f461877.png::CompressedTexture2D::7054455194239462708::1763490764::1763490847::1::::<><><>0<>0<>c6b11665c7f19bbabe0dd5eab458e11e<>res://.godot/imported/9e404d8d-ae25-4a64-8675-68623f461877.png-968ecfc4d8f51efb2e129a7b22309f52.ctex::
-89686bc3-3a6a-4392-8d4b-8a5e3f41b8e2.png::CompressedTexture2D::5616364761713131233::1763490764::1763490847::1::::<><><>0<>0<>1fc4ce9c89dcbf220b2bbd5bd50a43fe<>res://.godot/imported/89686bc3-3a6a-4392-8d4b-8a5e3f41b8e2.png-1df210c49c08b487d7be5911ada0ce9f.ctex::
-all_blocks.png::CompressedTexture2D::4878794364523217565::1763490764::1763490846::1::::<><><>0<>0<>d9692426ef220100a7f7f0b10309b13b<>res://.godot/imported/all_blocks.png-29ba52a6266b2483e121a065a889f5f4.ctex::
-MapaInicial.png::CompressedTexture2D::1024694117286016639::1763490764::1763490848::1::::<><><>0<>0<>c842e525091d1b4ce20cc98fddbe1bbc<>res://.godot/imported/MapaInicial.png-87ff68189e76cada6f7b666623150dc3.ctex::
-palette.png::CompressedTexture2D::2930358752313069617::1763490764::1763490846::1::::<><><>0<>0<>ecaa9b8f73182be42e45580b486b4944<>res://.godot/imported/palette.png-131e204bb32134c1e455555acf08ed5e.ctex::
-plan.png::CompressedTexture2D::7908778906103813581::1763490764::1763490846::1::::<><><>0<>0<>1faec85698a43aeb7c3df9fdf252eb7c<>res://.godot/imported/plan.png-f108b6b7d862572e362c2e356f448aa0.ctex::
->>>>>>> a2151fcca53e2d272779bb6df75939e0d7481fb7

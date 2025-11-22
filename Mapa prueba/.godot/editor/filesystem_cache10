@@ -1,0 +1,16 @@
+63f7b34db8d8cdea90c76aacccf841ec
+::res://::1763773398
+icon.svg::CompressedTexture2D::2368161283486109102::1763323467::1763773400::1::::<><><>0<>0<>c425f043b5268dd2c6b897d22c214a95<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
+mapaDeJuego.tscn::PackedScene::3103996964360517300::1763323467::0::1::::<><><>0<>0<><>::uid://dygpaeemls0ao::::res://sprites/Mapa/MapaInicial.png<>uid://dqcac4xdkqops::::res://Player.tscn
+node_2d.gd::GDScript::3963298593635730273::1763323467::0::1::::<>Node2D<><>0<>0<><>::
+node_2d.tscn::PackedScene::1294780145096601120::1763323467::0::1::::<><><>0<>0<><>::uid://bwp37i2k6hw0p::::res://node_2d.gd
+player.gd::GDScript::6382245095280624556::1763323467::0::1::::<>CharacterBody2D<><>0<>0<><>::
+Player.tscn::PackedScene::8286417435241721608::1763323467::0::1::::<><><>0<>0<><>::uid://cw6uv51b7xdce::::res://player.gd<>uid://80fjgrxr2abe::::res://icon.svg
+::res://sprites/::1763323467
+0e7ec208-fb44-4c5c-a1bf-f5ec2342ebc6.png::CompressedTexture2D::3102601929712019961::1763323467::1763773401::1::::<><><>0<>0<>9d3609a31e5e5d24de73f0e1cce25373<>res://.godot/imported/0e7ec208-fb44-4c5c-a1bf-f5ec2342ebc6.png-152e70a1be3b2396c2d8f67c1b9b298d.ctex::
+04a50f37-d566-4e78-89f8-cea03c5f9802.png::CompressedTexture2D::7632693827417977361::1763323467::1763773401::1::::<><><>0<>0<>afa57908eebe675442fc05fc3d398904<>res://.godot/imported/04a50f37-d566-4e78-89f8-cea03c5f9802.png-86e8e6dd41ac08517e402cfd113b7f95.ctex::
+9e404d8d-ae25-4a64-8675-68623f461877.png::CompressedTexture2D::7054455194239462708::1763323467::1763773401::1::::<><><>0<>0<>c6b11665c7f19bbabe0dd5eab458e11e<>res://.godot/imported/9e404d8d-ae25-4a64-8675-68623f461877.png-968ecfc4d8f51efb2e129a7b22309f52.ctex::
+89686bc3-3a6a-4392-8d4b-8a5e3f41b8e2.png::CompressedTexture2D::5616364761713131233::1763323467::1763773400::1::::<><><>0<>0<>1fc4ce9c89dcbf220b2bbd5bd50a43fe<>res://.godot/imported/89686bc3-3a6a-4392-8d4b-8a5e3f41b8e2.png-1df210c49c08b487d7be5911ada0ce9f.ctex::
+Prueba 1.tscn::PackedScene::-1::1763323467::0::1::::<><><>0<>0<><>::uid://dygpaeemls0ao::::res://sprites/Mapa/MapaInicial.png
+::res://sprites/Mapa/::1763323467
+MapaInicial.png::CompressedTexture2D::8857091536641215410::1763323467::1763773401::1::::<><><>0<>0<>8d100cb3d2fe7c8db5bc0afffce6f3d2<>res://.godot/imported/MapaInicial.png-6efd1a9d33baa540f7979d525bc6721c.ctex::

@@ -1,0 +1,53 @@
+[gd_scene load_steps=4 format=4 uid="uid://d2gwigyedpciy"]
+
+[ext_resource type="Texture2D" uid="uid://oumteewccyqp" path="res://sprites/MapaInicial.png" id="1_xi31o"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_6bg0a"]
+texture = ExtResource("1_xi31o")
+texture_region_size = Vector2i(500, 600)
+2:1/0 = 0
+3:1/0 = 0
+4:1/0 = 0
+3:2/0 = 0
+4:2/0 = 0
+2:2/0 = 0
+2:3/0 = 0
+3:3/0 = 0
+4:3/0 = 0
+4:4/0 = 0
+3:4/0 = 0
+2:4/0 = 0
+5:3/0 = 0
+5:4/0 = 0
+5:2/0 = 0
+5:1/0 = 0
+
+[sub_resource type="TileSet" id="TileSet_kriv8"]
+tile_size = Vector2i(500, 600)
+sources/0 = SubResource("TileSetAtlasSource_6bg0a")
+
+[node name="Node2D" type="Node2D"]
+
+[node name="Camera2D" type="Camera2D" parent="."]
+visible = false
+position = Vector2(-18, -56)
+zoom = Vector2(0.07, 0.06)
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TileMap" type="TileMap" parent="Node2D"]
+position = Vector2(-2970, -2793)
+scale = Vector2(3.417595, 4.1389356)
+tile_set = SubResource("TileSet_kriv8")
+rendering_quadrant_size = 20
+format = 2
+
+[node name="Layer1" type="TileMapLayer" parent="Node2D/TileMap"]
+use_parent_material = true
+position = Vector2(941.59784, 1940.8372)
+tile_map_data = PackedByteArray("AAABAAEAAAACAAQAAAACAAEAAAADAAQAAAADAAEAAAAEAAQAAAAEAAEAAAAFAAQAAAAEAAAAAAAFAAMAAAADAAAAAAAEAAMAAAACAAAAAAADAAMAAAABAAAAAAACAAMAAAABAP//AAACAAIAAAACAP//AAADAAIAAAADAP//AAAEAAIAAAAEAP//AAAFAAIAAAABAP7/AAACAAEAAAACAP7/AAADAAEAAAADAP7/AAAEAAEAAAAEAP7/AAAFAAEAAAA=")
+tile_set = SubResource("TileSet_kriv8")
+rendering_quadrant_size = 20
+
+[node name="Player" type="CharacterBody2D" parent="."]
+position = Vector2(68, 1946)

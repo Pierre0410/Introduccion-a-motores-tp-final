@@ -1,2 +1,5 @@
 res://nivel_2.tscn
+res://mapaDeJuego.tscn
 res://nivel_2.gd
+res://camera_2d.gd
+res://nivel_3.tscn
