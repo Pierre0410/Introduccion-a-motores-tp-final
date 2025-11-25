@@ -10,3 +10,6 @@ func add_Score():
 
 func removeOne_Score():
 	score = score - 1
+
+func reiniciarMarcador():
+	score = 0 
