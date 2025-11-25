@@ -1,7 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cvl7tbw5qkhe8"]
+[gd_scene load_steps=5 format=3 uid="uid://bq4k2k5v0ih3s"]
 
-[ext_resource type="Texture2D" uid="uid://80fjgrxr2abe" path="res://icon.svg" id="1_k3002"]
-[ext_resource type="Script" uid="uid://bhdpcycy24qyd" path="res://Character/character.gd" id="1_nwtvh"]
+[ext_resource type="Script" uid="uid://bhdpcycy24qyd" path="res://Character/character.gd" id="1_schp4"]
+[ext_resource type="Texture2D" uid="uid://80fjgrxr2abe" path="res://icon.svg" id="2_pusnx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nwtvh"]
 size = Vector2(128, 128)
@@ -9,12 +9,13 @@ size = Vector2(128, 128)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkkns"]
 size = Vector2(128, 128)
 
-[node name="Character" type="CharacterBody2D" node_paths=PackedStringArray("area_2d")]
-script = ExtResource("1_nwtvh")
+[node name="Player" type="CharacterBody2D" node_paths=PackedStringArray("area_2d")]
+scale = Vector2(0.5132812, 0.51038724)
+script = ExtResource("1_schp4")
 area_2d = NodePath("Area2D")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-texture = ExtResource("1_k3002")
+texture = ExtResource("2_pusnx")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_nwtvh")

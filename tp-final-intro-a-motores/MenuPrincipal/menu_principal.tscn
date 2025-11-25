@@ -3,7 +3,7 @@
 [ext_resource type="Theme" uid="uid://c76ars5xhdglg" path="res://MenuPrincipal/boton_menu_principal.tres" id="1_7jq6e"]
 [ext_resource type="Script" uid="uid://cfur1q4ruy2k3" path="res://MenuPrincipal/iniciar.gd" id="2_eq7n5"]
 [ext_resource type="Script" uid="uid://cfest6jmxe7ly" path="res://MenuPrincipal/salir.gd" id="2_lmusp"]
-[ext_resource type="PackedScene" uid="uid://bkhum2ida73kq" path="res://mapaDeJuego.tscn" id="3_fxt0a"]
+[ext_resource type="Script" uid="uid://dr4ib17fyabsu" path="res://MenuPrincipal/niveles.gd" id="4_obmud"]
 
 [node name="MenuPrincipal" type="Control"]
 layout_mode = 3
@@ -20,22 +20,31 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -20.0
-offset_top = -20.0
-offset_right = 20.0
-offset_bottom = 20.0
+offset_left = -124.0
+offset_top = -153.5
+offset_right = 124.0
+offset_bottom = 153.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_constants/separation = 20
 
 [node name="Iniciar" type="Button" parent="VBoxContainer"]
+process_mode = 3
 layout_mode = 2
 theme = ExtResource("1_7jq6e")
 text = "Iniciar"
 script = ExtResource("2_eq7n5")
-primerNivel = ExtResource("3_fxt0a")
+
+[node name="Niveles" type="Button" parent="VBoxContainer"]
+process_mode = 3
+layout_mode = 2
+theme = ExtResource("1_7jq6e")
+text = "Niveles
+"
+script = ExtResource("4_obmud")
 
 [node name="Salir" type="Button" parent="VBoxContainer"]
+process_mode = 3
 layout_mode = 2
 theme = ExtResource("1_7jq6e")
 text = "Salir"

@@ -1,0 +1,33 @@
+[gd_scene load_steps=2 format=3 uid="uid://bxi66psm75lu0"]
+
+[ext_resource type="Script" uid="uid://c2kj10rdy2sk8" path="res://Escenas/menu_de_pausa.gd" id="1_8wnxu"]
+
+[node name="MenuDePausa" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(7.874293, 6.485593)
+script = ExtResource("1_8wnxu")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.80495495, 0.80495495)
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Menu" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Menu Principal"
+
+[node name="SalirDelJuego" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Salir del juego"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Menu" to="." method="_on_menu_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/SalirDelJuego" to="." method="_on_salir_del_juego_pressed"]

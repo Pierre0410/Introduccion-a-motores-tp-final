@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://dycjxror27hh4"]
+
+[ext_resource type="Script" uid="uid://d2c1b72nl6gwn" path="res://Escenas/pause_menu.gd" id="1_cr0pj"]
+
+[node name="PauseMenu" type="CanvasLayer"]
+process_mode = 3
+script = ExtResource("1_cr0pj")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 506.7606
+offset_bottom = 424.28723
+scale = Vector2(2.5672872, 1.5885465)
+color = Color(1, 1, 1, 0.60784316)
+
+[node name="Reanudar" type="Button" parent="."]
+process_mode = 3
+offset_left = 468.99997
+offset_top = 213.0
+offset_right = 606.8521
+offset_bottom = 238.10619
+scale = Vector2(2.2995653, 4.0229135)
+theme_override_font_sizes/font_size = 8
+text = "Reanudar"
+
+[node name="Salir" type="Button" parent="."]
+process_mode = 3
+offset_left = 468.99997
+offset_top = 343.0
+offset_right = 606.8521
+offset_bottom = 368.1062
+scale = Vector2(2.2995653, 4.0229135)
+theme_override_font_sizes/font_size = 8
+text = "Salir
+"
+
+[connection signal="pressed" from="Reanudar" to="." method="_on_reanudar_pressed"]
+[connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
