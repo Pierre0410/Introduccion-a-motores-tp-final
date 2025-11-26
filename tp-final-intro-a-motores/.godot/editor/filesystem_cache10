@@ -1,9 +1,12 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1763771162
+::res://::1764070709
+camera_2d.gd::GDScript::1259826492785305464::1763782725::0::1::::<>RefCounted<><>0<>0<><>::
 icon.svg::CompressedTexture2D::2368161283486109102::1763323467::1763350751::1::::<><><>0<>0<>c425f043b5268dd2c6b897d22c214a95<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-mapaDeJuego.tscn::PackedScene::3103996964360517300::1763405905::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png
-nivel_2.gd::GDScript::102162224950079697::1763594312::0::1::::<>Node2D<><>0<>0<><>::
-nivel_2.tscn::PackedScene::2054865239945927942::1763767120::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png<>uid://bpqukbket7dt::::res://nivel_2.gd<>uid://cbrlbbef14bhd::::res://sprites/all_blocks.png<>uid://dkxcoywon1q2x::::res://sprites/plan.png<>uid://df4txs35xa6lf::::res://sprites/dugeonRoomFloor/dugeonWallsFloorsTransparentBackground.png
+mapaDeJuego.tscn::PackedScene::3103996964360517300::1763772553::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png
+nivel_1.tscn::PackedScene::9068097508424387288::1763773745::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png
+nivel_2.gd::GDScript::102162224950079697::1763783004::0::1::::<>Node2D<><>0<>0<><>::
+nivel_2.tscn::PackedScene::2054865239945927942::1763783016::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png<>uid://bpqukbket7dt::::res://nivel_2.gd<>uid://cbrlbbef14bhd::::res://sprites/all_blocks.png<>uid://dkxcoywon1q2x::::res://sprites/plan.png<>uid://df4txs35xa6lf::::res://sprites/dugeonRoomFloor/dugeonWallsFloorsTransparentBackground.png
+nivel_3.tscn::PackedScene::7877741985582198347::1763968174::0::1::::<><><>0<>0<><>::uid://oumteewccyqp::::res://sprites/MapaInicial.png<>uid://cbrlbbef14bhd::::res://sprites/all_blocks.png<>uid://dkxcoywon1q2x::::res://sprites/plan.png<>uid://df4txs35xa6lf::::res://sprites/dugeonRoomFloor/dugeonWallsFloorsTransparentBackground.png
 node_2d.gd::GDScript::3963298593635730273::1763323467::0::1::::<>Node2D<><>0<>0<><>::
 node_2d.tscn::PackedScene::1294780145096601120::1763323467::0::1::::<><><>0<>0<><>::uid://bwp37i2k6hw0p::::res://node_2d.gd
 ::res://MenuPrincipal/::1763755787
