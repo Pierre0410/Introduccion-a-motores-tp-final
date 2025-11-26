@@ -14,24 +14,36 @@ color = Color(1, 1, 1, 0.60784316)
 
 [node name="Reanudar" type="Button" parent="."]
 process_mode = 3
-offset_left = 468.99997
-offset_top = 213.0
-offset_right = 606.8521
-offset_bottom = 238.10619
+offset_left = 471.0
+offset_top = 129.0
+offset_right = 608.8522
+offset_bottom = 154.10619
 scale = Vector2(2.2995653, 4.0229135)
 theme_override_font_sizes/font_size = 8
 text = "Reanudar"
 
 [node name="Salir" type="Button" parent="."]
 process_mode = 3
-offset_left = 468.99997
-offset_top = 343.0
-offset_right = 606.8521
-offset_bottom = 368.1062
+offset_left = 471.0
+offset_top = 386.0
+offset_right = 608.8522
+offset_bottom = 411.1062
 scale = Vector2(2.2995653, 4.0229135)
 theme_override_font_sizes/font_size = 8
 text = "Salir
 "
 
+[node name="Reiniciar" type="Button" parent="."]
+process_mode = 3
+offset_left = 471.0
+offset_top = 258.0
+offset_right = 608.8522
+offset_bottom = 283.1062
+scale = Vector2(2.2995653, 4.0229135)
+theme_override_font_sizes/font_size = 8
+text = "Reiniciar
+"
+
 [connection signal="pressed" from="Reanudar" to="." method="_on_reanudar_pressed"]
 [connection signal="pressed" from="Salir" to="." method="_on_salir_pressed"]
+[connection signal="pressed" from="Reiniciar" to="." method="_on_reiniciar_pressed"]

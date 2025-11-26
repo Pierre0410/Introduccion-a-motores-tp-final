@@ -3,14 +3,39 @@ extends CharacterBody2D
 @export var area_2d: Area2D
 # Called when the node enters the scene tree for the first time.
 @export var SPEED = 300.0
-@export var JUMP_VELOCITY = -800
+var direccion: Vector2 = Vector2.ZERO
+var en_movimiento = false
+#@export var JUMP_VELOCITY = -800
 
 
 func _physics_process(delta: float) -> void:
-	if not is_on_floor():
-		velocity += get_gravity() * delta
+	if not en_movimiento:
+		verificar_input()
+	if en_movimiento:
+		var choque = move_and_collide(direccion * SPEED * delta)
+		if choque:
+			en_movimiento = false
+			direccion = Vector2.ZERO
 
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+func verificar_input():
+	if Input.is_action_just_pressed("Up"):
+		direccion = Vector2.UP
+		en_movimiento = true   
+	elif Input.is_action_just_pressed("Down"):
+		direccion = Vector2.DOWN
+		en_movimiento = true
+	elif Input.is_action_just_pressed("Left"):
+		direccion = Vector2.LEFT
+		en_movimiento = true
+	elif Input.is_action_just_pressed("Right"):
+		direccion = Vector2.RIGHT
+		en_movimiento = true
+	"""if not is_on_floor():
+		velocity += get_gravity() * delta
+	
+	
+		
+	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
 
 	var direction := Input.get_axis("ui_left", "ui_right")
@@ -19,7 +44,7 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
-	move_and_slide()
+	move_and_slide()"""
 	
 
 func _ready() -> void:

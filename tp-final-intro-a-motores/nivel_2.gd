@@ -1,13 +1,9 @@
 extends Node2D
 
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
-
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-
+func _ready():
+	GameManager.nivelActual = get_tree().current_scene.scene_file_path
+	print("se guardo el nivel 2")
 
 func  _physics_process(delta):
 	var posicion_del_mouse = get_global_mouse_position()

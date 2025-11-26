@@ -1,6 +1,7 @@
 extends Control
 
 var score = 0
+var nivelActual: String = ""
 
 func _ready() -> void:
 	pass
