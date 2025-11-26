@@ -12,21 +12,20 @@
 [node name="TilemapLayers" parent="." instance=ExtResource("1_b7xed")]
 position = Vector2(1205, 590)
 
-[node name="Player" parent="." groups=["jugador"] instance=ExtResource("2_yclnc")]
-position = Vector2(1072, 291)
-collision_layer = 129
-JUMP_VELOCITY = -650
+[node name="Camera2D" type="Camera2D" parent="TilemapLayers"]
+position = Vector2(1, 6)
+zoom = Vector2(0.575, 0.32)
 
-[node name="Control" type="Control" parent="Player"]
+[node name="Control" type="Control" parent="TilemapLayers"]
 layout_mode = 3
 anchors_preset = 0
-offset_left = -1072.0
-offset_top = -291.0
-offset_right = -1032.0
-offset_bottom = -251.0
+offset_left = -1205.0
+offset_top = -590.0
+offset_right = -1165.0
+offset_bottom = -550.0
 script = ExtResource("3_fyvwl")
 
-[node name="Label" type="Label" parent="Player/Control"]
+[node name="Label" type="Label" parent="TilemapLayers/Control"]
 layout_mode = 0
 offset_left = 1604.6287
 offset_top = -27.0
@@ -36,13 +35,15 @@ scale = Vector2(1.7465775, 1.7465775)
 text = "00"
 script = ExtResource("4_x34xk")
 
-[node name="Sprite2D" type="Sprite2D" parent="Player/Control"]
+[node name="Sprite2D" type="Sprite2D" parent="TilemapLayers/Control"]
 position = Vector2(1587.6288, -7)
 scale = Vector2(1.4535971, 1.5146662)
 texture = ExtResource("3_wktx1")
 
-[node name="Camera2D" type="Camera2D" parent="Player"]
-position = Vector2(0, 7)
+[node name="Player" parent="." groups=["jugador"] instance=ExtResource("2_yclnc")]
+position = Vector2(1072, 291)
+collision_layer = 129
+JUMP_VELOCITY = -650
 
 [node name="Moneda" parent="." groups=["Monedas"] instance=ExtResource("5_sqwja")]
 position = Vector2(826, 298)

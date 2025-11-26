@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 res://nivel_3.tscn
+=======
+res://Escenas/game_manager.tscn
+res://Script/game_manager.gd
+res://EscenarioNivel1.tscn
+res://Escenas/pause_menu.gd
+>>>>>>> 2d2e36dcf5394d939b47e7c97d802a1f243602e4
