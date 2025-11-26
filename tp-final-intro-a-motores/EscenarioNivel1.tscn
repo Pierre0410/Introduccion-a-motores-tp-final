@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=4 uid="uid://drlllv0srds7y"]
+[gd_scene load_steps=11 format=4 uid="uid://drlllv0srds7y"]
 
 [ext_resource type="Texture2D" uid="uid://b47ijvmcjso1q" path="res://Tilemap.png" id="1_mlyh5"]
 [ext_resource type="PackedScene" uid="uid://bq4k2k5v0ih3s" path="res://Character/Player.tscn" id="2_0m6td"]
@@ -6,6 +6,8 @@
 [ext_resource type="Script" uid="uid://b27cifmb1w13t" path="res://label.gd" id="3_hppir"]
 [ext_resource type="PackedScene" uid="uid://b7h6uayqw2eg1" path="res://Objetos/Moneda.tscn" id="4_kdfwn"]
 [ext_resource type="PackedScene" uid="uid://dycjxror27hh4" path="res://Escenas/pause_menu.tscn" id="6_44r53"]
+[ext_resource type="PackedScene" uid="uid://dqvo80ssbvivd" path="res://doppelganger.tscn" id="7_ry3bt"]
+[ext_resource type="PackedScene" uid="uid://c7ilvtkx80suq" path="res://doppelganger_espejo.tscn" id="8_dj66g"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ogb6j"]
 texture = ExtResource("1_mlyh5")
@@ -72,8 +74,17 @@ collision_mask = 1
 position = Vector2(247, -283)
 collision_mask = 129
 
-[node name="Player" parent="." instance=ExtResource("2_0m6td")]
-position = Vector2(860, 698)
+[node name="ManPac" parent="." instance=ExtResource("2_0m6td")]
+position = Vector2(992, 1553.9999)
+scale = Vector2(0.8613722, 0.82001954)
 collision_mask = 129
 
 [node name="PauseMenu" parent="." instance=ExtResource("6_44r53")]
+
+[node name="doppelganger" parent="." instance=ExtResource("7_ry3bt")]
+position = Vector2(696, 1150)
+scale = Vector2(1.0232769, 1.0033439)
+
+[node name="doppelgangerEspejo" parent="." instance=ExtResource("8_dj66g")]
+position = Vector2(1098, 979.00006)
+scale = Vector2(1.137088, 0.9596282)
