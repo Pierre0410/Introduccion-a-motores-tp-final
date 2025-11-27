@@ -1,0 +1,14 @@
+CollisionShape2D
+AnimatedSprite2D
+RigidBody2D
+AnimationPlayer
+ColorRect
+Button
+CanvasLayer
+MarginContainer
+Popup
+Node2D
+Control
+VBoxContainer
+ItemList
+Node
