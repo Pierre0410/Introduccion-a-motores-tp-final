@@ -164,4 +164,4 @@ scale = Vector2(0.9144993, 1.1410886)
 position = Vector2(176.05263, -180.52936)
 scale = Vector2(2.4357061, 2.1857355)
 sprite_frames = SubResource("SpriteFrames_pjukt")
-frame_progress = 0.25895116
+frame_progress = 0.39058426
