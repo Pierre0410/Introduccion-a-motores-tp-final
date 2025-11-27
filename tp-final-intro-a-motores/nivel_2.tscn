@@ -6,7 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://dkxcoywon1q2x" path="res://sprites/plan.png" id="4_tnojt"]
 [ext_resource type="Texture2D" uid="uid://df4txs35xa6lf" path="res://sprites/dugeonRoomFloor/dugeonWallsFloorsTransparentBackground.png" id="5_es3ns"]
 [ext_resource type="Texture2D" uid="uid://b47ijvmcjso1q" path="res://Tilemap.png" id="6_3ux85"]
-[ext_resource type="PackedScene" uid="uid://dycjxror27hh4" path="res://Escenas/pause_menu.tscn" id="6_tnojt"]
+[ext_resource type="PackedScene" uid="uid://dycjxror27hh4" path="res://Escenas/Menu pausa/pause_menu.tscn" id="6_tnojt"]
 [ext_resource type="PackedScene" uid="uid://bngqqxrvkokd1" path="res://Character/PlayerPrueba.tscn" id="7_3ux85"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lj8fh"]
@@ -6985,10 +6985,9 @@ position = Vector2(1352, -584)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1359.0001, -574)
-scale = Vector2(0.6414439, 0.6752373)
+position = Vector2(1352, -584)
 ignore_rotation = false
-zoom = Vector2(0.9, 0.8)
+zoom = Vector2(0.7, 0.6)
 
 [node name="Mapa" type="Node2D" parent="."]
 position = Vector2(1815, -171)
@@ -7000,7 +6999,6 @@ tile_map_data = PackedByteArray("AAD5//L/AwABAAAAAAD5////AwACAAEAAAD5/wIAAwACAAE
 tile_set = SubResource("TileSet_oaeky")
 
 [node name="RigidBody2D" parent="Mapa" instance=ExtResource("7_3ux85")]
-position = Vector2(-566, -181)
-scale = Vector2(0.61805075, 0.6210835)
+position = Vector2(-419, -440)
 
 [node name="PauseMenu" parent="." instance=ExtResource("6_tnojt")]

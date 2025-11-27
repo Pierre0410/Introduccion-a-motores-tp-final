@@ -1,5 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://c7ilvtkx80suq"]
+[gd_scene load_steps=26 format=3 uid="uid://c7ilvtkx80suq"]
 
+[ext_resource type="Script" uid="uid://baqfa6o3pwppv" path="res://doppelganger_espejo.gd" id="1_8emsi"]
 [ext_resource type="Texture2D" uid="uid://wl4qpuj4giry" path="res://sprites/DoppelEspe/DoppelGangerEspejo.png" id="1_40mqg"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_8emsi"]
@@ -157,10 +158,21 @@ animations = [{
 "speed": 30.0
 }]
 
-[node name="doppelgangerEspejo" type="RigidBody2D"]
-scale = Vector2(1.0232769, 1.0033439)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_40mqg"]
+size = Vector2(80.5, 91)
+
+[node name="doppelgangerEspejo" type="CharacterBody2D"]
+collision_layer = 16
+script = ExtResource("1_8emsi")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(2.2774084, 2.3289754)
+scale = Vector2(2.0773752, 2.186)
 sprite_frames = SubResource("SpriteFrames_2shon")
 frame_progress = 0.65278214
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(1.75, 7)
+shape = SubResource("RectangleShape2D_40mqg")
+
+[node name="MovimientoTimer" type="Timer" parent="."]
+wait_time = 0.5

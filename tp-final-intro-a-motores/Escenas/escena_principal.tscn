@@ -1,0 +1,10 @@
+[gd_scene load_steps=5 format=3 uid="uid://dibhlixomhgh2"]
+
+[ext_resource type="Script" uid="uid://buontpc4hkr5k" path="res://Escenas/escena_principal.gd" id="1_wmjee"]
+[ext_resource type="PackedScene" uid="uid://drlllv0srds7y" path="res://EscenarioNivel1.tscn" id="2_ripk3"]
+[ext_resource type="PackedScene" uid="uid://4jnlh2ogglf7" path="res://nivel_2.tscn" id="3_s6hsl"]
+[ext_resource type="PackedScene" uid="uid://dkibi3bmbxl2b" path="res://nivel_3.tscn" id="4_7xruv"]
+
+[node name="Escena_principal" type="Node2D"]
+script = ExtResource("1_wmjee")
+niveles = Array[PackedScene]([ExtResource("2_ripk3"), ExtResource("3_s6hsl"), ExtResource("4_7xruv")])

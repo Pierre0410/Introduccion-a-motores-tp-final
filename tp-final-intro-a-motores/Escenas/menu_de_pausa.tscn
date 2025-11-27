@@ -1,6 +1,4 @@
-[gd_scene load_steps=2 format=3 uid="uid://bxi66psm75lu0"]
-
-[ext_resource type="Script" uid="uid://c2kj10rdy2sk8" path="res://Escenas/menu_de_pausa.gd" id="1_8wnxu"]
+[gd_scene format=3 uid="uid://bxi66psm75lu0"]
 
 [node name="MenuDePausa" type="Control"]
 layout_mode = 3
@@ -10,7 +8,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(7.874293, 6.485593)
-script = ExtResource("1_8wnxu")
 
 [node name="MarginContainer" type="MarginContainer" parent="."]
 layout_mode = 0

@@ -1,5 +1,6 @@
-[gd_scene load_steps=24 format=3 uid="uid://dqvo80ssbvivd"]
+[gd_scene load_steps=26 format=3 uid="uid://dqvo80ssbvivd"]
 
+[ext_resource type="Script" uid="uid://bqwi3wfkp8wva" path="res://doppelganger.gd" id="1_nq561"]
 [ext_resource type="Texture2D" uid="uid://5l8iuivgbhci" path="res://sprites/Doppelganger/DoppelGanger.png" id="1_t21dp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nq561"]
@@ -157,11 +158,22 @@ animations = [{
 "speed": 30.0
 }]
 
-[node name="doppelganger" type="RigidBody2D"]
-scale = Vector2(0.9144993, 1.1410886)
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t21dp"]
+size = Vector2(88.000015, 92.017395)
+
+[node name="doppelganger" type="CharacterBody2D"]
+collision_layer = 16
+script = ExtResource("1_nq561")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(176.05263, -180.52936)
-scale = Vector2(2.4357061, 2.1857355)
+scale = Vector2(2.3194158, 2.1857355)
 sprite_frames = SubResource("SpriteFrames_pjukt")
 frame_progress = 0.39058426
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(3, 7)
+scale = Vector2(0.9999999, 1)
+shape = SubResource("RectangleShape2D_t21dp")
+
+[node name="MovimientoTimer" type="Timer" parent="."]
+wait_time = 0.5

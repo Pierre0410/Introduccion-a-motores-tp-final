@@ -1,0 +1,26 @@
+[gd_scene load_steps=2 format=3 uid="uid://b8r1403ocit4f"]
+
+[ext_resource type="Script" uid="uid://58p4vjb4rtrg" path="res://Escenas/pasaste_al_nivel_2.gd" id="1_3vvq8"]
+
+[node name="PasasteAlNivel2" type="CanvasLayer"]
+script = ExtResource("1_3vvq8")
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+offset_right = 506.7606
+offset_bottom = 424.28723
+scale = Vector2(2.5672872, 1.5885465)
+
+[node name="TextEdit" type="TextEdit" parent="."]
+anchors_preset = -1
+anchor_top = -0.24
+anchor_right = 1.1320001
+anchor_bottom = 1.049
+offset_left = -8.0
+offset_top = 371.52
+offset_right = -1087.9822
+offset_bottom = -421.99203
+scale = Vector2(5.855, 5.855)
+text = "Felicidades pasaste de nivel"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 4.0

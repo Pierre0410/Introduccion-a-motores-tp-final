@@ -17,4 +17,4 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _jugar():
-	get_tree().change_scene_to_file("res://EscenarioNivel1.tscn")
+	get_tree().change_scene_to_file("res://Escenas/escena_principal.tscn")
