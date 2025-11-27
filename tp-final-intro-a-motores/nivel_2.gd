@@ -9,7 +9,6 @@ func  _physics_process(delta):
 	var posicion_del_mouse = get_global_mouse_position()
 	var velocidad = delta * 100
 	
-	if velocidad <= 20 :
-		get_node("Mapa/TileMapLayer").look_at(posicion_del_mouse)
-
 	
+	if Input.is_mouse_button_pressed(MOUSE_BUTTON_LEFT) and velocidad <= 50:
+		get_node("Mapa/TileMapLayer").look_at(posicion_del_mouse)

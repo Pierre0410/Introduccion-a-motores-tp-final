@@ -6985,9 +6985,10 @@ position = Vector2(1352, -584)
 [node name="CollisionShape2D" type="CollisionShape2D" parent="RigidBody2D"]
 
 [node name="Camera2D" type="Camera2D" parent="."]
-position = Vector2(1352, -584)
+position = Vector2(1359.0001, -574)
+scale = Vector2(0.6414439, 0.6752373)
 ignore_rotation = false
-zoom = Vector2(0.7, 0.6)
+zoom = Vector2(0.9, 0.8)
 
 [node name="Mapa" type="Node2D" parent="."]
 position = Vector2(1815, -171)
@@ -6999,6 +7000,7 @@ tile_map_data = PackedByteArray("AAD5//L/AwABAAAAAAD5////AwACAAEAAAD5/wIAAwACAAE
 tile_set = SubResource("TileSet_oaeky")
 
 [node name="RigidBody2D" parent="Mapa" instance=ExtResource("7_3ux85")]
-position = Vector2(-419, -440)
+position = Vector2(-566, -181)
+scale = Vector2(0.61805075, 0.6210835)
 
 [node name="PauseMenu" parent="." instance=ExtResource("6_tnojt")]
