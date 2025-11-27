@@ -1,5 +1,9 @@
-Timer
+AudioStreamPlayer2D
+Label      - Matches the "text" keyword.
 TextEdit
+Camera2D
+Sprite2D
+Timer
 ColorRect
 CanvasLayer
 CharacterBody2D
@@ -8,7 +12,3 @@ AnimatedSprite2D
 RigidBody2D
 AnimationPlayer
 Button
-MarginContainer
-Popup
-Node2D
-Control

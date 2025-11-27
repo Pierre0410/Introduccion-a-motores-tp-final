@@ -1,11 +1,12 @@
-[gd_scene load_steps=12 format=4 uid="uid://dkibi3bmbxl2b"]
+[gd_scene load_steps=13 format=4 uid="uid://dkibi3bmbxl2b"]
 
 [ext_resource type="Script" uid="uid://dsntuamnav5sw" path="res://nivel_3.gd" id="1_ai75a"]
 [ext_resource type="Texture2D" uid="uid://oumteewccyqp" path="res://sprites/MapaInicial.png" id="1_foow7"]
 [ext_resource type="Texture2D" uid="uid://cbrlbbef14bhd" path="res://sprites/all_blocks.png" id="2_ol0td"]
 [ext_resource type="Texture2D" uid="uid://dkxcoywon1q2x" path="res://sprites/plan.png" id="3_ai75a"]
 [ext_resource type="Texture2D" uid="uid://df4txs35xa6lf" path="res://sprites/dugeonRoomFloor/dugeonWallsFloorsTransparentBackground.png" id="4_1col5"]
-[ext_resource type="PackedScene" uid="uid://dycjxror27hh4" path="res://Escenas/Menu pausa/pause_menu.tscn" id="5_ol0td"]
+[ext_resource type="PackedScene" uid="uid://dycjxror27hh4" path="res://Escenas/pause_menu.tscn" id="5_ol0td"]
+[ext_resource type="AudioStream" uid="uid://rfyyu6rfeqh5" path="res://Musica/heavy-german-techno-beat-dark-industrial-instrumental-403003.mp3" id="7_1col5"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_sfkl1"]
 texture = ExtResource("1_foow7")
@@ -6954,3 +6955,8 @@ tile_map_data = PackedByteArray("AAD1//T/AwAAAAAAAAD1//X/AwAAAAIAAAD1//b/AwAAAAI
 tile_set = SubResource("TileSet_30wi5")
 
 [node name="PauseMenu" parent="." instance=ExtResource("5_ol0td")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("7_1col5")
+autoplay = true
+parameters/looping = true

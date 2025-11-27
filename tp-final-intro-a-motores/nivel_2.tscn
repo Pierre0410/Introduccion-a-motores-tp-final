@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=4 uid="uid://4jnlh2ogglf7"]
+[gd_scene load_steps=16 format=4 uid="uid://4jnlh2ogglf7"]
 
 [ext_resource type="Texture2D" uid="uid://oumteewccyqp" path="res://sprites/MapaInicial.png" id="1_1g353"]
 [ext_resource type="Script" uid="uid://bpqukbket7dt" path="res://nivel_2.gd" id="1_t82tv"]
@@ -6,8 +6,9 @@
 [ext_resource type="Texture2D" uid="uid://dkxcoywon1q2x" path="res://sprites/plan.png" id="4_tnojt"]
 [ext_resource type="Texture2D" uid="uid://df4txs35xa6lf" path="res://sprites/dugeonRoomFloor/dugeonWallsFloorsTransparentBackground.png" id="5_es3ns"]
 [ext_resource type="Texture2D" uid="uid://b47ijvmcjso1q" path="res://Tilemap.png" id="6_3ux85"]
-[ext_resource type="PackedScene" uid="uid://dycjxror27hh4" path="res://Escenas/Menu pausa/pause_menu.tscn" id="6_tnojt"]
+[ext_resource type="PackedScene" uid="uid://dycjxror27hh4" path="res://Escenas/pause_menu.tscn" id="6_tnojt"]
 [ext_resource type="PackedScene" uid="uid://bngqqxrvkokd1" path="res://Character/PlayerPrueba.tscn" id="7_3ux85"]
+[ext_resource type="AudioStream" uid="uid://rfyyu6rfeqh5" path="res://Musica/heavy-german-techno-beat-dark-industrial-instrumental-403003.mp3" id="9_ug47r"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_lj8fh"]
 texture = ExtResource("1_1g353")
@@ -7002,3 +7003,9 @@ tile_set = SubResource("TileSet_oaeky")
 position = Vector2(-419, -440)
 
 [node name="PauseMenu" parent="." instance=ExtResource("6_tnojt")]
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("9_ug47r")
+autoplay = true
+max_distance = 900000000.0
+parameters/looping = true

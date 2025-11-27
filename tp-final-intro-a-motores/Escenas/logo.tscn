@@ -1,0 +1,31 @@
+[gd_scene load_steps=4 format=3 uid="uid://bhlcdot5xyu16"]
+
+[ext_resource type="Texture2D" uid="uid://hpp68265yqp0" path="res://sprites/titulo.png" id="1_mo7lm"]
+[ext_resource type="Script" uid="uid://buhc6512qsebw" path="res://Escenas/logo.gd" id="1_xr2ih"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_mo7lm"]
+
+[node name="Logo" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xr2ih")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_mo7lm")
+
+[node name="Camera2D" type="Camera2D" parent="Sprite2D"]
+zoom = Vector2(5.745, 5.745)
+
+[node name="Label" type="Label" parent="Sprite2D"]
+offset_left = -78.0
+offset_top = 46.0
+offset_right = 185.0
+offset_bottom = 69.0
+scale = Vector2(0.57, 0.57)
+text = "Presiona \"Espacio\" para continuar"
+label_settings = SubResource("LabelSettings_mo7lm")
+horizontal_alignment = 1

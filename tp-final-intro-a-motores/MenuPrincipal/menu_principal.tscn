@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://b37xwgy4gpqvh"]
+[gd_scene load_steps=6 format=3 uid="uid://b37xwgy4gpqvh"]
 
 [ext_resource type="Theme" uid="uid://c76ars5xhdglg" path="res://MenuPrincipal/boton_menu_principal.tres" id="1_7jq6e"]
 [ext_resource type="Script" uid="uid://cfur1q4ruy2k3" path="res://MenuPrincipal/iniciar.gd" id="2_eq7n5"]
 [ext_resource type="Script" uid="uid://cfest6jmxe7ly" path="res://MenuPrincipal/salir.gd" id="2_lmusp"]
 [ext_resource type="Script" uid="uid://dr4ib17fyabsu" path="res://MenuPrincipal/niveles.gd" id="4_obmud"]
+[ext_resource type="AudioStream" uid="uid://ch1d60hy1s2sh" path="res://Musica/-353871.mp3" id="5_obmud"]
 
 [node name="MenuPrincipal" type="Control"]
 layout_mode = 3
@@ -49,3 +50,7 @@ layout_mode = 2
 theme = ExtResource("1_7jq6e")
 text = "Salir"
 script = ExtResource("2_lmusp")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_obmud")
+autoplay = true
