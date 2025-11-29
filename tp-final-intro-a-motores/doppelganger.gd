@@ -4,9 +4,11 @@ var velocidad := 200
 var direccion: Vector2 = Vector2.ZERO
 var en_movimiento := false
 
+@export var animacion: AnimatedSprite2D
 @onready var timer: Timer = $MovimientoTimer
 
 func _ready():
+	animacion.play("default")
 	timer.start()
 	timer.connect("timeout", Callable(self, "_on_mover_timer_timeout"))
 

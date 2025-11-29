@@ -155,19 +155,20 @@ animations = [{
 size = Vector2(95.33334, 116.4138)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkkns"]
-size = Vector2(95.33336, 115.862076)
+size = Vector2(127.333374, 135.86206)
 
-[node name="ManPac" type="CharacterBody2D" node_paths=PackedStringArray("area_2d")]
+[node name="ManPac" type="CharacterBody2D" node_paths=PackedStringArray("area_2d", "animacion")]
 scale = Vector2(1.5, 1.45)
 script = ExtResource("1_schp4")
 area_2d = NodePath("Area2D")
+animacion = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 position = Vector2(1.3333333, -4.137931)
 scale = Vector2(3.0658097, 3.3943372)
 sprite_frames = SubResource("SpriteFrames_schp4")
 animation = &"ManPac"
-frame_progress = 0.14908418
+frame_progress = 0.24065392
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(5.000008, 5.931037)
@@ -179,6 +180,6 @@ collision_layer = 0
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(4.9999986, 6.206895)
+position = Vector2(4.3333325, 3.1034474)
 scale = Vector2(0.99999964, 0.9999999)
 shape = SubResource("RectangleShape2D_jkkns")

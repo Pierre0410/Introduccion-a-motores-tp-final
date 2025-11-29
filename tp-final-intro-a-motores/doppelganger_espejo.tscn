@@ -161,9 +161,10 @@ animations = [{
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_40mqg"]
 size = Vector2(80.5, 91)
 
-[node name="doppelgangerEspejo" type="CharacterBody2D"]
+[node name="doppelgangerEspejo" type="CharacterBody2D" node_paths=PackedStringArray("animacion")]
 collision_layer = 16
 script = ExtResource("1_8emsi")
+animacion = NodePath("AnimatedSprite2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 scale = Vector2(2.0773752, 2.186)

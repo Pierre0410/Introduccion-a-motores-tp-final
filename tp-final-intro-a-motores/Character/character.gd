@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var SPEED = 300.0
 var direccion: Vector2 = Vector2.ZERO
 var en_movimiento = false
+@export var animacion: AnimatedSprite2D  
 
 
 signal personaje_muerto
@@ -15,6 +16,8 @@ signal player_se_movio(direction: Vector2)
 func _ready() -> void:
 	area_2d.body_entered.connect(_on_area_2d_body_entered)
 	add_to_group("personajes")
+	animacion.play("ManPac")
+	
 
 
 func _physics_process(delta: float) -> void:
