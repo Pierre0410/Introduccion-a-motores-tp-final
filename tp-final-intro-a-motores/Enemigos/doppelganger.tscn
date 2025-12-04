@@ -1,6 +1,6 @@
 [gd_scene load_steps=26 format=3 uid="uid://dqvo80ssbvivd"]
 
-[ext_resource type="Script" uid="uid://bqwi3wfkp8wva" path="res://doppelganger.gd" id="1_nq561"]
+[ext_resource type="Script" uid="uid://bqwi3wfkp8wva" path="res://Enemigos/doppelganger.gd" id="1_nq561"]
 [ext_resource type="Texture2D" uid="uid://5l8iuivgbhci" path="res://sprites/Doppelganger/DoppelGanger.png" id="1_t21dp"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_nq561"]

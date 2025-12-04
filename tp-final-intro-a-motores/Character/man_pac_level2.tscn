@@ -156,10 +156,10 @@ animations = [{
 size = Vector2(120.00004, 128.27588)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkkns"]
-size = Vector2(134.33337, 149.31033)
+size = Vector2(166.00006, 186.89655)
 
 [node name="ManPac" type="CharacterBody2D" node_paths=PackedStringArray("area_2d", "animacion", "reproductor")]
-scale = Vector2(1.5, 1.45)
+scale = Vector2(1.2405276, 1.1991768)
 script = ExtResource("1_48gsy")
 area_2d = NodePath("Area2D")
 SPEED = 180.0
@@ -182,7 +182,7 @@ collision_layer = 0
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(2.8333323, 6.7241387)
+position = Vector2(0, 9.999999)
 scale = Vector2(0.99999964, 0.9999999)
 shape = SubResource("RectangleShape2D_jkkns")
 

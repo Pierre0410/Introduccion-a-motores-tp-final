@@ -159,7 +159,7 @@ size = Vector2(120.00004, 128.27588)
 size = Vector2(134.33337, 149.31033)
 
 [node name="ManPac" type="CharacterBody2D" node_paths=PackedStringArray("area_2d", "animacion", "reproductor")]
-scale = Vector2(1.5, 1.45)
+scale = Vector2(0.57359207, 0.5544723)
 script = ExtResource("1_schp4")
 area_2d = NodePath("Area2D")
 animacion = NodePath("AnimatedSprite2D")

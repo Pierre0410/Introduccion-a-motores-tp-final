@@ -1,4 +1,18 @@
-res://Character/man_pac.tscn
-res://Character/character.gd
+res://nivel_2.tscn
+res://doppelganger.tscn
+res://EscenarioNivel1.tscn
+res://Enemigos/doppelganger_level2.tscn
+res://Enemigos/doppelganger_level_2.gd
+res://Enemigos/doppelganger_level2Hori.tscn
+res://Enemigos/doppelganger_level2verti.tscn
+res://Enemigos/doppelganger_level_2_verti.gd
 res://Character/man_pac_level2.tscn
-res://Character/man_pac_level_2.gd
+res://Character/Player.tscn
+res://escenario_nivel_1.gd
+res://nivel_2.gd
+res://Enemigos/doppelganger_level_2Horizontal.gd
+res://Character/man_pac.tscn
+res://Enemigos/doppelganger.gd
+res://doppelganger_espejo.gd
+res://Escenas/Menu pausa/pause_menu.tscn
+res://Character/character.gd

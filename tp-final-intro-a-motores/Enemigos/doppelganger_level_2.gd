@@ -28,12 +28,9 @@ func _physics_process(delta):
 
 func _on_mover_timer_timeout():
 	# Elegir nueva dirección aleatoria
-	var dirs = [
-		Vector2.UP,
-		Vector2.DOWN,
+	var dirHorizontal= [
 		Vector2.LEFT,
 		Vector2.RIGHT
 	]
-	
-	direccion = dirs[randi() % dirs.size()]
+	direccion = dirHorizontal[randi() % dirHorizontal.size()]
 	en_movimiento = true
