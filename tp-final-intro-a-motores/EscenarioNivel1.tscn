@@ -52,22 +52,6 @@ anchor_mode = 0
 ignore_rotation = false
 zoom = Vector2(0.58, 0.32)
 
-[node name="GameManager" parent="TileMap" instance=ExtResource("2_auf8n")]
-offset_left = -138.0
-offset_top = 117.0
-offset_right = -138.0
-offset_bottom = 117.0
-
-[node name="ContadorMonedas" type="Label" parent="TileMap/GameManager"]
-layout_mode = 0
-offset_left = 1042.0
-offset_top = -1108.0
-offset_right = 1082.0
-offset_bottom = -1085.0
-scale = Vector2(4.2728825, 4.2728825)
-text = "00"
-script = ExtResource("3_hppir")
-
 [node name="Monedas" type="Node2D" parent="TileMap"]
 light_mask = 129
 
@@ -285,5 +269,21 @@ position = Vector2(688, 688)
 
 [node name="doppelganger" parent="." instance=ExtResource("7_ry3bt")]
 position = Vector2(1312, 680)
+
+[node name="GameManager" parent="." instance=ExtResource("2_auf8n")]
+offset_left = 853.0
+offset_top = 1111.0
+offset_right = 853.0
+offset_bottom = 1111.0
+
+[node name="ContadorMonedas" type="Label" parent="GameManager"]
+layout_mode = 0
+offset_left = 1042.0
+offset_top = -1108.0
+offset_right = 1082.0
+offset_bottom = -1085.0
+scale = Vector2(4.2728825, 4.2728825)
+text = "00"
+script = ExtResource("3_hppir")
 
 [connection signal="personaje_muerto" from="ManPac" to="." method="_on_man_pac_personaje_muerto"]

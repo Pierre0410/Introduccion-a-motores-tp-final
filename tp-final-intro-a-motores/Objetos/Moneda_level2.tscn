@@ -1,0 +1,26 @@
+[gd_scene load_steps=5 format=3 uid="uid://ducxwok6fnnaq"]
+
+[ext_resource type="Script" uid="uid://cp18mk2uwmssc" path="res://Objetos/moneda.gd" id="1_aq3dt"]
+[ext_resource type="Texture2D" uid="uid://comchg5cp0635" path="res://sprites/Moneda.png" id="2_fdlog"]
+[ext_resource type="AudioStream" uid="uid://by5ds0ogm40ne" path="res://Musica/coin-257878.mp3" id="3_durkx"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_r5uhx"]
+
+[node name="Moneda" type="Area2D" node_paths=PackedStringArray("reproductor") groups=["Monedas", "jugador"]]
+scale = Vector2(0.6011809, 0.6011809)
+collision_layer = 128
+collision_mask = 128
+script = ExtResource("1_aq3dt")
+reproductor = NodePath("AudioStreamPlayer2D")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("2_fdlog")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+scale = Vector2(0.7180105, 0.90990883)
+shape = SubResource("CircleShape2D_r5uhx")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("3_durkx")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

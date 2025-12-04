@@ -153,13 +153,14 @@ animations = [{
 }]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_nwtvh"]
-size = Vector2(120.00004, 128.27588)
+size = Vector2(55.653397, 57.57249)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jkkns"]
-size = Vector2(166.00006, 186.89655)
+size = Vector2(69.56676, 71.9656)
 
 [node name="ManPac" type="CharacterBody2D" node_paths=PackedStringArray("area_2d", "animacion", "reproductor")]
-scale = Vector2(1.2405276, 1.1991768)
+rotation = -6.2831855
+scale = Vector2(0.2874937, 0.27791062)
 script = ExtResource("1_48gsy")
 area_2d = NodePath("Area2D")
 SPEED = 180.0
@@ -167,14 +168,17 @@ animacion = NodePath("AnimatedSprite2D")
 reproductor = NodePath("AudioStreamPlayer2D")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-scale = Vector2(3.0658097, 3.3943372)
+scale = Vector2(1.182, 1.0783247)
 sprite_frames = SubResource("SpriteFrames_schp4")
 animation = &"ManPac"
-frame_progress = 0.24065392
+frame = 10
+frame_progress = 0.7244887
+offset = Vector2(-2.2598567, -2.7876024)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1.9999964, 12.413794)
-scale = Vector2(0.99999964, 0.9999999)
+modulate = Color(0.3298316, 0.673457, 0.93857086, 1)
+position = Vector2(-1.0366283e-07, 1.715793e-06)
+scale = Vector2(0.9999997, 0.99999976)
 shape = SubResource("RectangleShape2D_nwtvh")
 
 [node name="Area2D" type="Area2D" parent="."]
@@ -182,9 +186,11 @@ collision_layer = 0
 collision_mask = 16
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(0, 9.999999)
-scale = Vector2(0.99999964, 0.9999999)
+visible = false
+position = Vector2(-1.6586004e-06, 2.2875344e-07)
+scale = Vector2(0.9999997, 0.99999976)
 shape = SubResource("RectangleShape2D_jkkns")
 
 [node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+position = Vector2(0, -0.8339054)
 stream = ExtResource("3_m7jqw")

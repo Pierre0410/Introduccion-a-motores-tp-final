@@ -4,6 +4,7 @@ extends CharacterBody2D
 @export var SPEED = 150.0
 @export var animacion: AnimatedSprite2D  
 @export var reproductor:AudioStreamPlayer2D
+@onready var jugador =  $ManPac
 
 var direccion: Vector2 = Vector2.ZERO
 var en_movimiento = false
@@ -41,23 +42,23 @@ func moverse():
 		direccion = Vector2.DOWN
 		en_movimiento = true
 		print("abajo")
-		emit_signal("player_se_movio", direccion)
 		animacion.flip_h = false
 		animacion.rotation_degrees = rotacion + 90
+		emit_signal("player_se_movio", direccion)
 	elif Input.is_action_just_pressed("Left"):
 		direccion = Vector2.LEFT
 		en_movimiento = true
 		print("izquierda")
-		emit_signal("player_se_movio", direccion)
 		animacion.rotation_degrees = rotacion
 		animacion.flip_h = true
+		emit_signal("player_se_movio", direccion)
 	elif Input.is_action_just_pressed("Right"):
 		direccion = Vector2.RIGHT
 		en_movimiento = true
 		print("derecha")
-		emit_signal("player_se_movio", direccion)
 		animacion.rotation_degrees = rotacion
 		animacion.flip_h = false
+		emit_signal("player_se_movio", direccion)
 
 func _on_area_2d_body_entered(_body: Node2D) -> void:
 	print("muerto")
