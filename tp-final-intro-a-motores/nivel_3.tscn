@@ -6984,7 +6984,7 @@ tile_map_data = PackedByteArray("AAADAOD/AwACAAIAAAAEAOD/AwACAAIAAAAFAOD/AwACAAI
 tile_set = SubResource("TileSet_30wi5")
 
 [node name="ManPac" parent="Mapa" instance=ExtResource("6_sfkl1")]
-position = Vector2(269, -693.6)
+position = Vector2(9, -582)
 
 [node name="Camera2D" type="Camera2D" parent="Mapa/ManPac"]
 position = Vector2(-1.5258789e-05, -7.196472)
@@ -7010,3 +7010,5 @@ position = Vector2(297, -663)
 stream = ExtResource("7_1col5")
 autoplay = true
 parameters/looping = true
+
+[connection signal="personaje_muerto" from="Mapa/ManPac" to="." method="_on_man_pac_personaje_muerto"]
