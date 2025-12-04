@@ -5,6 +5,8 @@ var direccion: Vector2 = Vector2.ZERO
 var en_movimiento := false
 
 @export var animacion: AnimatedSprite2D
+
+
 @onready var timer: Timer = $MovimientoTimer
 
 func _ready():

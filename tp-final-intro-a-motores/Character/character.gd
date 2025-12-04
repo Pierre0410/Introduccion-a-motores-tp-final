@@ -1,17 +1,16 @@
 extends CharacterBody2D
 
 @export var area_2d: Area2D
-@export var SPEED = 300.0
+@export var SPEED = 150.0
+@export var animacion: AnimatedSprite2D  
+@export var reproductor:AudioStreamPlayer2D
+
 var direccion: Vector2 = Vector2.ZERO
 var en_movimiento = false
-@export var animacion: AnimatedSprite2D  
-
+var rotacion = 0
 
 signal personaje_muerto
 signal player_se_movio(direction: Vector2)
-
-
-
 
 func _ready() -> void:
 	area_2d.body_entered.connect(_on_area_2d_body_entered)
@@ -22,7 +21,7 @@ func _ready() -> void:
 
 func _physics_process(delta: float) -> void:
 	if not en_movimiento:
-		verificar_input()
+		moverse()
 		
 	if en_movimiento:
 		var choque = move_and_collide(direccion * SPEED * delta)
@@ -30,29 +29,39 @@ func _physics_process(delta: float) -> void:
 			en_movimiento = false
 			direccion = Vector2.ZERO
 
-func verificar_input():
+func moverse():
 	if Input.is_action_just_pressed("Up"):
 		direccion = Vector2.UP
 		en_movimiento = true
 		print("arriba")
+		animacion.flip_h = false
+		animacion.rotation_degrees = rotacion - 90
 		emit_signal("player_se_movio", direccion)
 	elif Input.is_action_just_pressed("Down"):
 		direccion = Vector2.DOWN
 		en_movimiento = true
 		print("abajo")
 		emit_signal("player_se_movio", direccion)
+		animacion.flip_h = false
+		animacion.rotation_degrees = rotacion + 90
 	elif Input.is_action_just_pressed("Left"):
 		direccion = Vector2.LEFT
 		en_movimiento = true
 		print("izquierda")
 		emit_signal("player_se_movio", direccion)
+		animacion.rotation_degrees = rotacion
+		animacion.flip_h = true
 	elif Input.is_action_just_pressed("Right"):
 		direccion = Vector2.RIGHT
 		en_movimiento = true
 		print("derecha")
 		emit_signal("player_se_movio", direccion)
+		animacion.rotation_degrees = rotacion
+		animacion.flip_h = false
 
-func _on_area_2d_body_entered(body: Node2D) -> void:
+func _on_area_2d_body_entered(_body: Node2D) -> void:
 	print("muerto")
+	reproductor.reparent(get_parent().get_parent().get_parent())
+	reproductor.play()
 	personaje_muerto.emit()
 	GameManager.reiniciarMarcador()

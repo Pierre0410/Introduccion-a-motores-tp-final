@@ -1,7 +1,7 @@
 extends Node2D
 
 
-func _ready():
+"""func _ready():
 	GameManager.nivelActual = get_tree().current_scene.scene_file_path
 	print("se guardo el nivel 2")
 
@@ -12,4 +12,4 @@ func  _physics_process(delta):
 	if velocidad <= 20 :
 		get_node("Mapa/TileMapLayer").look_at(posicion_del_mouse)
 
-	
+	"""
