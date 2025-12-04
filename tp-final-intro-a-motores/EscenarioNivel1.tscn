@@ -50,7 +50,7 @@ tile_set = SubResource("TileSet_j31kl")
 position = Vector2(-992, -992)
 anchor_mode = 0
 ignore_rotation = false
-zoom = Vector2(0.58, 0.32)
+zoom = Vector2(0.575, 0.317)
 
 [node name="Monedas" type="Node2D" parent="TileMap"]
 light_mask = 129
