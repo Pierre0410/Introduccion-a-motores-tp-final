@@ -1,7 +1,7 @@
 extends CharacterBody2D
 
 @export var area_2d: Area2D
-@export var SPEED = 300.0
+@export var SPEED = 150.0
 @export var animacion: AnimatedSprite2D  
 @export var reproductor:AudioStreamPlayer2D
 

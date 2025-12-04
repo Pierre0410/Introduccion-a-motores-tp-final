@@ -1,8 +1,4 @@
-res://nivel_2.tscn
-res://nivel_2.gd
-res://Character/Player.tscn
-res://Character/character.gd
-res://EscenarioNivel1.tscn
-res://escenario_nivel_1.gd
 res://Character/man_pac.tscn
+res://Character/character.gd
 res://Character/man_pac_level2.tscn
+res://Character/man_pac_level_2.gd

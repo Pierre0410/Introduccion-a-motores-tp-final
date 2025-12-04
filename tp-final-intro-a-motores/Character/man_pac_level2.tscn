@@ -1,6 +1,6 @@
 [gd_scene load_steps=27 format=3 uid="uid://bcc1dre2asagj"]
 
-[ext_resource type="Script" uid="uid://bhdpcycy24qyd" path="res://Character/character.gd" id="1_48gsy"]
+[ext_resource type="Script" uid="uid://bcfjpnqlu2e6n" path="res://Character/man_pac_level_2.gd" id="1_48gsy"]
 [ext_resource type="Texture2D" uid="uid://bssm1tx0efi0q" path="res://sprites/PacMan/ManPac.png" id="2_k8o8l"]
 [ext_resource type="AudioStream" uid="uid://diam0y3frr525" path="res://Musica/horror-hit-443980.mp3" id="3_m7jqw"]
 
@@ -162,6 +162,7 @@ size = Vector2(134.33337, 149.31033)
 scale = Vector2(1.5, 1.45)
 script = ExtResource("1_48gsy")
 area_2d = NodePath("Area2D")
+SPEED = 180.0
 animacion = NodePath("AnimatedSprite2D")
 reproductor = NodePath("AudioStreamPlayer2D")
 
